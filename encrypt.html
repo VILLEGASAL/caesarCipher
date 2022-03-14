@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Encrypt A Message</title>
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <style>
+        textarea{
+            
+            resize: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid d-flex flex-column justify-content-center align-items-center">
+        <h1 class="my-5">ENCRYPT A MESSAGE</h1>
+        <a href="index.html" class="w-75"><button class="btn btn-secondary w-100">BACK TO HOME</button></a>
+
+        <div class="form-group w-75">
+            <div class="mb-3 mt-5">
+                <label for="key" class="w-100 text-center lead fw-bold">CHOOSE A NUMBER AS A KEY</label>
+                <input type="number" class="form-control text-center" id="key" placeholder="KEY">
+            </div>
+
+            <div class="mb-3">
+                <label for="message" class="w-100 text-center lead fw-bold">ENTER YOUR MESSAGE HERE</label>
+                <textarea class="form-control h-75 text-center" id="message" rows="3" placeholder="YOUR TEXT HERE!"></textarea>
+            </div>
+
+            <div class="mb-3">
+                <label for="enc-message" class="w-100 text-center lead fw-bold">ENCRYPTED MESSAGE IS HERE</label>
+                <textarea class="form-control h-75 text-center" id="enc-message" rows="3" placeholder="ENCRYPTED TEXT HERE!"></textarea>
+            </div>
+        </div>
+
+        <button class="btn btn-danger w-75" id="clear-all">CLEAR ALL FIELDS</button>
+    </div>
+
+    <script src="encrypt.js"></script>
+</body>
+</html>
